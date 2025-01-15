@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Screen Algorithm</title>
+    <link rel="stylesheet" href="green.css">
 </head>
 <body>
     <div class="main-container">
@@ -19,23 +20,24 @@
                 <canvas id="canvasOutput"></canvas>
             </div>
         </div>
-        <div class="input-group">
+        <div class="input-box">
             <label for="inputForeground">Foreground Image (Green Screen):</label>
             <input type="file" id="inputForeground" accept="image/*">
         </div>
-        <div class="input-group">
+        <div class="input-box">
             <label for="inputBackground">Background Image:</label>
             <input type="file" id="inputBackground" accept="image/*">
         </div>
-        <div class="slider-container">
+        <!-- <div class="slider-container">
             <label for="sliderThreshold">Green Threshold:</label>
             <input type="range" id="sliderThreshold" min="0" max="255" value="150">
             <span id="displayThreshold">150</span>
-        </div>
+        </div> -->
         <div class="button-container">
             <button id="btnMerge">Merge Images</button>
             <button id="btnClear">Clear Images</button>
         </div>
     </div>
+    <script src="green.js"></script>
 </body>
 </html>
